@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/index.css */
+
+.workout-builder {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+
+.blocks-section, .canvas-section {
+  width: 50%;
+}
+
+.blocks-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block, .canvas-block {
+  margin: 10px;
+  background-color: #d6bcfa;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}

@@ -1,0 +1,59 @@
+/* Drag and Drop Styles */
+.draggable {
+  cursor: move;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.draggable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.drag-over {
+  background-color: rgba(67, 57, 242, 0.05);
+  border: 2px dashed #4339F2;
+}
+
+/* Animations */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Add these styles for better drag and drop feedback */
+.dragging {
+  opacity: 0.5;
+  transform: scale(1.05);
+}
+
+[draggable] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cursor-move {
+  cursor: move;
+  cursor: grab;
+}
+
+.cursor-move:active {
+  cursor: grabbing;
+} 
